@@ -1,0 +1,6 @@
+#windows执行自动化测试
+adb shell am instrument -w -e reportFilePath junit-report.xml com.mingrisoft.test/com.zutubi.android.junitreport.JUnitReportTestRunner
+#获取测试报告
+adb pull /data/data/com.tuanche.app/files/junit-report.xml ${WORKSPACE}/junitHtml
+#重新生成报告格式，并发送报告
+python %WORKSPACE%\\junitHtml\\sendhtml_linux.py %WORKSPACE%\\junitHtml\\junit-report.xml %BUILD_URL% %JOB_NAME% tuanche changlei.chen@tuanche.com,hongpeng.cao@tuanche.com,dabang.xing@tuanche.com

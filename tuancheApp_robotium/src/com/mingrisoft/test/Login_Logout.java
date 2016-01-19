@@ -80,8 +80,8 @@ public class Login_Logout extends ActivityInstrumentationTestCase2 {
 		solo.clickOnText("北京");
 		solo.clickOnView(solo.getView("tv_registration_city"));
 		solo.clickOnText("北京");
-		solo.clickOnView(solo.getView("btn_ask_price"));
-		solo.clickOnView(solo.getView("backIV"));
+//		solo.clickOnView(solo.getView("btn_ask_price"));
+//		solo.clickOnView(solo.getView("backIV"));
 		solo.sleep(500);
 	}
 	/**
@@ -105,7 +105,7 @@ public class Login_Logout extends ActivityInstrumentationTestCase2 {
 		solo.enterText((android.widget.EditText) solo.getView("et_input_name"), "tuanche");
 		solo.clickOnView(solo.getView("et_input_phone"));
 		solo.clearEditText((android.widget.EditText) solo.getView("et_input_phone"));
-		solo.enterText((android.widget.EditText) solo.getView("et_input_phone"), "15369652511");
+		solo.enterText((android.widget.EditText) solo.getView("et_input_phone"), "15369652510");
 		solo.clickOnButton("团购报名");
 		solo.clickOnView(solo.getView("tv_car_color"));
 		solo.clickOnText("Sportback 35 TFSI 手动进取型");
@@ -115,7 +115,7 @@ public class Login_Logout extends ActivityInstrumentationTestCase2 {
 		solo.clickOnText("否");
 		solo.clickOnView(solo.getView("tv_other_requirement_label"));
 		solo.enterText((android.widget.EditText) solo.getView("tv_other_requirement_label"), "10000");
-		solo.clickOnButton("立即报名");
+//		solo.clickOnButton("立即报名");
 		solo.sleep(500);
 	}
 	/**
